@@ -18,7 +18,20 @@
 
 <script>
 
+/*
+(async () => {
+  const peerConnection = new RTCPeerConnection();
+  const offer = await peerConnection.createOffer({
+    offerToReceiveAudio: true,
+    offerToReceiveVideo: true,
+  });
+  document.querySelector("#sdp").textContent = offer.sdp;
+})();
+*/
+
 </script>
+
+<textarea id="sdpRAW"></textarea>
 
 <textarea id="sdp"></textarea>
 
